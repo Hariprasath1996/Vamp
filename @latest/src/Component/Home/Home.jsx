@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import { Link } from "react-router-dom"
+import { FaUser } from "react-icons/fa";
 const Home = () => {
     return (
         <>
@@ -17,9 +18,12 @@ const Home = () => {
                             <Link to={"Service"}>Service</Link>
                         </li>
                         <li>
-                            <Link to={"Contact"} className='Contact_us'>Contact_us</Link>
+                            <Link to={"Contact"} className='Contact_us '>Contact_us</Link>
                         </li>
                     </ul>
+                </div>
+                <div className='log-in'>
+                    <Link><FaUser className='user-icon' style={{color:'orangered',position}} />Log-In</Link>
                 </div>
             </nav>
         </>
