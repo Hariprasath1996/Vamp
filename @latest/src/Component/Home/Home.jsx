@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.css"
 import { Link } from "react-router-dom"
 import { FaUser } from "react-icons/fa";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 const Home = () => {
     return (
         <>
@@ -12,7 +13,7 @@ const Home = () => {
                 <div className='contain'>
                     <ul className='un-order'>
                         <li>
-                            <Link to={"/"} className='Home'>Home </Link>
+                            <Link to={"/"} className='Home'>About_us </Link>
                         </li>
                         <li>
                             <Link to={"/Service"}>Service</Link>
@@ -27,8 +28,26 @@ const Home = () => {
                 </div>
             </nav>
             {/* side nav bar */}
+            <div className='side-nav-bar'>
+                <p>
+                    <IoMdCloseCircleOutline />
+                </p>
+                <div className='side-nav-para'>
+                    <p className='side-para'> <Link to={"/"} className='Home'>About_us </Link></p>
+                    <p className='side-para'><Link to={"/Service"}>Service</Link></p>
+                    <p className='side-para'><Link to={"/Contact"} className='Contact_us '>Contact_us</Link></p>
+                    <p className='side-para'>
+                        <div className='side-log-in'>
+                            <Link><span style={{ right: 10, top: 2, position: 'relative' }}><FaUser className='user-icon' /></span></Link>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            {/* side nav logo */}
+            <div className='side-img-container'>
+                <img className='logo' src="src/image/vamp-icon.png" alt="vamp-logo" style={{ width: 150, borderRadius: 10 }} />
+            </div>
             <div></div>
-
         </>
     )
 }

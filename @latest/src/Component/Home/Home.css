@@ -14,7 +14,7 @@
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     overflow: hidden;
-    
+
 }
 
 .img-container {
@@ -97,4 +97,82 @@
 
 .log-in.user-icon:hover {
     color: #062644;
+}
+
+/* side nav bar */
+.side-nav-bar {
+    background-color: grey;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 20px;
+    display: none;
+    transition: 1s;
+}
+
+.side-nav-para {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.side-para a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-para a :hover {
+    text-decoration: underline;
+}
+
+.side-img-container {
+    display: none;
+    justify-content: flex-end;
+    flex: 1;
+    width: 40%;
+}
+
+.side-img-container img {
+    width: 250px;
+    height: auto;
+    position: relative;
+    left: 250px;
+}
+
+/* .side-img-container img{
+display: none;
+position: relative;
+left:1350px
+} */
+
+
+@media screen and (max-width:700px) {
+
+    .contain,
+    .log-in {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .side-nav-bar,
+    .side-log-in {
+        display: block;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .side-img-container img {
+        display: block;
+    }
+
+    .img-container {
+        display: none;
+        width: 100%;
+
+    }
 }
