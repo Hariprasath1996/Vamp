@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <nav className='nav-bar'>
                 <div className='img-container'>
-                    <img className='logo' src="src/image/vamp-ev.png" alt="vamp-logo" style={{ width: 150, borderRadius: 10 }} />
+                    <img className='logo' src="src/image/vamp-icon.png" alt="vamp-logo" style={{ width: 150, borderRadius: 10 }} />
                 </div>
                 <div className='contain'>
                     <ul className='un-order'>
@@ -15,10 +15,10 @@ const Home = () => {
                             <Link to={"/"} className='Home'>Home </Link>
                         </li>
                         <li>
-                            <Link to={"Service"}>Service</Link>
+                            <Link to={"/Service"}>Service</Link>
                         </li>
                         <li>
-                            <Link to={"Contact"} className='Contact_us '>Contact_us</Link>
+                            <Link to={"/Contact"} className='Contact_us '>Contact_us</Link>
                         </li>
                     </ul>
                 </div>
