@@ -29,7 +29,7 @@ const Home = () => {
             </nav>
             {/* side nav bar */}
             <div className='side-nav-bar'>
-                <p>
+                <p className='close-btn'>
                     <IoMdCloseCircleOutline />
                 </p>
                 <div className='side-nav-para'>
@@ -37,9 +37,7 @@ const Home = () => {
                     <p className='side-para'><Link to={"/Service"}>Service</Link></p>
                     <p className='side-para'><Link to={"/Contact"} className='Contact_us '>Contact_us</Link></p>
                     <p className='side-para'>
-                        <div className='side-log-in'>
-                            <Link><span style={{ right: 10, top: 2, position: 'relative' }}><FaUser className='user-icon' /></span></Link>
-                        </div>
+                        <Link><span style={{}}><FaUser className='user-icon' />Log-In</span></Link>
                     </p>
                 </div>
             </div>
