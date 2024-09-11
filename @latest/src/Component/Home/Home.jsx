@@ -7,7 +7,7 @@ const Home = () => {
         <>
             <nav className='nav-bar'>
                 <div className='img-container'>
-                    <img className='logo' src="src/image/vamp-logo.png" alt="vamp-logo" />
+                    <img className='logo' src="src/image/vamp-ev.png" alt="vamp-logo"  style={{width: 150 , borderRadius:10}}/>
                 </div>
                 <div className='contain'>
                     <ul className='un-order'>
@@ -23,7 +23,7 @@ const Home = () => {
                     </ul>
                 </div>
                 <div className='log-in'>
-                    <Link><FaUser className='user-icon' style={{color:'orangered',position}} />Log-In</Link>
+                    <Link><span style={{right:10,top:2,position:'relative'}}><FaUser className='user-icon'  /></span>Log-In</Link>
                 </div>
             </nav>
         </>
