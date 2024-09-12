@@ -3,7 +3,9 @@ import "./Slides.css"
 import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
 const Slides = ({ items }) => {
+    
     const [slide, setSlide] = useState(0);
+
     const nextSlide = () => {
         setSlide(slide === items.length - 1 ? 0 : slide + 1)
     }

@@ -1,3 +1,5 @@
+
+
 { "slide":
     [{
         "src":"https://picsum.photos/seed/img1/200/300",
@@ -14,5 +16,9 @@
     {
         "src":"https://picsum.photos/seed/img4/200/300",
         "alt":"image 4"
-    }]
+    },{
+        "src":"src/image/vamp-ev.png",
+        "alt":"image 5"
+    }
+]
 }

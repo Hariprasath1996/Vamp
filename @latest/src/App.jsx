@@ -8,7 +8,7 @@ const App = () => {
   return (
     <BrowserRouter >
     <Home />
-    <Slides items={slide}/>
+    <Slides items={slide}/> 
       <Routes>
         <Route path="/Service" element={ <Service />}></Route>
       </Routes>
