@@ -1,14 +1,14 @@
 * {
     padding: 0;
     margin: 0;
-
+box-sizing: border-box;
 }
 
 
 .nav-bar {
     background: #062744;
+
     display: flex;
-    position: fixed;
     width: 100vw;
     height: auto;
     font-size: 25px;
@@ -97,7 +97,7 @@
     color: #062644;
 }
 
-/* side nav bar */
+
 .side-nav-bar {
     background-color: rgb(65, 157, 18);
     width: 30%;
@@ -152,10 +152,9 @@
 }
 
 
-/* media queries */
 
 
-@media screen and (max-width :425px) {
+@media screen and (max-width :426px) {
 
     .contain,
     .log-in {
@@ -170,6 +169,7 @@
 
     .side-nav-bar {
         display: block;
+        width: 42%;
     }
 
 }

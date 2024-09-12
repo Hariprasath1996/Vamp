@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/Service" element={ <Service />}></Route>
       </Routes>
       {/* here data is props name */}
-      <Slides data={slide}/>
+      <Slides items={slide}/>
     </BrowserRouter>
   )
 }
