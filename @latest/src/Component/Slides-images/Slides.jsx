@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import "./Slides.css"
-import { IoIosArrowDropleft } from "react-icons/io";
-import { IoIosArrowDropright } from "react-icons/io";
+import { FaCircleArrowLeft } from "react-icons/fa6";
+import { FaCircleArrowRight } from "react-icons/fa6";
 const Slides = ({ items }) => {
     const [slide, setSlide] = useState(0);
     const nextSlide = () => {
@@ -19,7 +19,7 @@ const Slides = ({ items }) => {
     }, [slide]);
     return (
         <div className='slides'>
-            <IoIosArrowDropleft className='arrow arrow-left' onClick={prevSlide} />
+            <FaCircleArrowLeft className='arrow arrow-left' onClick={prevSlide} />
             {
                 items.map((item, index) => {
                     return <>
@@ -27,7 +27,7 @@ const Slides = ({ items }) => {
                     </>
                 })
             }
-            <IoIosArrowDropright className='arrow arrow-right' onClick={nextSlide} />
+            <FaCircleArrowRight className='arrow arrow-right' onClick={nextSlide} />
             <span className='indicators' >
                 {items.map((_, index) => {
                     return <button className={slide === index ? "indicator" : "indicator indicator-inactive"} key={index} onClick={() => setSlide(index)}></button>

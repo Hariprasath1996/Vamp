@@ -37,15 +37,10 @@ const Home = () => {
                     <p className='side-para'><Link to={"/Service"}>Service</Link></p>
                     <p className='side-para'><Link to={"/Contact"} className='Contact_us '>Contact_us</Link></p>
                     <p className='side-para'>
-                        <Link><span style={{}}><FaUser className='user-icon' />Log-In</span></Link>
+                        <Link><span ><FaUser className='user-icon' />Log-In</span></Link>
                     </p>
                 </div>
             </div>
-            {/* side nav logo */}
-            <div className='side-img-container'>
-                <img className='side-logo' src="src/image/vamp-icon.png" alt="vamp-logo" style={{ width: 150, borderRadius: 10 }} />
-            </div>
-            <div></div>
         </>
     )
 }

@@ -57,7 +57,8 @@ cursor: pointer;
         display: none;
     }
 } */
-.slides {
+
+/* .slides {
     position: relative;
     width: 100%;
     height: 500px;
@@ -121,5 +122,120 @@ cursor: pointer;
 @media screen and (max-width :426px) {
     .slides{
         display: none;
+    }
+} */
+ /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Slider Container */
+.slides {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    height: 500px; 
+    margin: auto;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-hidden {
+    opacity: 0; 
+    pointer-events: none;
+    position: absolute;
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.8); 
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition:  0.3s ease;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+/* Indicators (Circles below the slider) */
+.indicators {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+}
+
+.indicator-inactive {
+    opacity: 0.5;
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 1); 
+}
+
+.indicator-active {
+    background: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slides {
+        height: 300px; 
+    }
+
+    .arrow {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
     }
 }

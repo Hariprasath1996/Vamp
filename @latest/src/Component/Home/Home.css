@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
 box-sizing: border-box;
@@ -172,4 +172,153 @@ box-sizing: border-box;
         width: 42%;
     }
 
+} */
+ /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; 
+}
+
+/* Navbar Styles */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-container .logo {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.contain {
+    display: flex;
+}
+
+.un-order {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.un-order li {
+    position: relative;
+}
+
+.un-order li a {
+    color: #ecf0f1; /* Light text */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.un-order li a:hover {
+    color: #3498db; 
+}
+/* Log-In Styles */
+.log-in a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+
+    transition: color 0.3s;
+}
+
+.log-in a:hover {
+    color:  rgb(65, 157, 18);
+}
+
+.user-icon {
+    font-size: 1.5rem;
+}
+
+/* Side Navbar Styles */
+.side-nav-bar {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 250px;
+    height: 100%;
+    background-color: #34495e; 
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.side-nav-bar.active {
+    left: 0; 
+}
+
+.close-btn {
+    font-size: 2rem;
+    color: #ecf0f1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.side-nav-para {
+    margin-top: 30px;
+}
+
+.side-nav-para .side-para {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.side-nav-para .side-para a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.side-nav-para .side-para a:hover {
+    color: #3498db;
+}
+
+/* Side Navbar User Icon */
+.user-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Side Navbar Logo */
+.side-img-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.side-logo {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .un-order {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .log-in {
+        margin-top: 15px;
+    }
 }

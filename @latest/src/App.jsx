@@ -7,12 +7,13 @@ import {slide} from './Constant/data.json'
 const App = () => {
   return (
     <BrowserRouter >
+    <Home />
+    <Slides items={slide}/>
       <Routes>
-        <Route path="/" element={ <Home />}></Route>
         <Route path="/Service" element={ <Service />}></Route>
       </Routes>
       {/* here data is props name */}
-      <Slides items={slide}/>
+      
     </BrowserRouter>
   )
 }
