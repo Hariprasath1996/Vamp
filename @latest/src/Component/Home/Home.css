@@ -99,7 +99,7 @@
 
 /* side nav bar */
 .side-nav-bar {
-    background-color:rgb(53, 137, 11);
+    background-color: rgb(65, 157, 18);
     width: 30%;
     height: 100%;
     position: fixed;
@@ -110,19 +110,21 @@
     display: none;
     transition: 5s;
 }
-.side-nav-bar .close-btn{
+
+.side-nav-bar .close-btn {
     width: 100%;
     position: relative;
-    left:70px;
+    left: 70px;
     font-size: xx-large;
     color: rgb(202, 32, 13);
 }
+
 .side-nav-para {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
     position: relative;
-    top:20px;
+    top: 20px;
 }
 
 .side-para a {
@@ -150,102 +152,24 @@
 }
 
 
+/* media queries */
 
 
-@media screen and (max-width:426px) {
+@media screen and (max-width :425px) {
 
     .contain,
     .log-in {
         display: none;
     }
+
+    .img-container {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
     .side-nav-bar {
         display: block;
     }
-}
-@media screen and (min-width:450px) {
-    .side-img-container img {
-        display: block;
-    }
 
-    .img-container {
-        display: none;
-
-    }
-}
-
-@media screen and (max-width:460px) {
-    .side-img-container img {
-        display: none;
-    }
-
-    .img-container {
-        display: block;
-
-    }
-}
-
-@media screen and (max-width:461px) {
-    .side-img-container img {
-        display: none;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        left: 220px;
-    }
-}
-
-@media screen and (min-width:425px) {
-    .side-img-container img {
-        display: none;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        left: 270px;
-    }
-    .side-nav-bar .close-btn{
-        position: relative;
-        left:80%
-    }
-}
-@media screen and (min-width:429px){
-    .img-container {
-        display: block  ;
-        width: 100%;
-        height: auto;
-        position: relative;
-        left: 5px;
-    }
-    
-}
-
-@media screen and (max-width:320px) {
-    .side-img-container img {
-        display: none;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: flex-start;
-        position: relative;
-        left: 150px;
-    }
-}
-@media screen and (min-width:700px) {
-    .side-img-container img {
-        display: none;
-    }
-
-    .img-container {
-        display: block  ;
-        width: 250px;
-        height: auto;
-        position: relative;
-        left: 5px;
-    }
 }

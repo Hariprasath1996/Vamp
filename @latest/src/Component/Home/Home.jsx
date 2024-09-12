@@ -43,7 +43,7 @@ const Home = () => {
             </div>
             {/* side nav logo */}
             <div className='side-img-container'>
-                <img className='logo' src="src/image/vamp-icon.png" alt="vamp-logo" style={{ width: 150, borderRadius: 10 }} />
+                <img className='side-logo' src="src/image/vamp-icon.png" alt="vamp-logo" style={{ width: 150, borderRadius: 10 }} />
             </div>
             <div></div>
         </>
